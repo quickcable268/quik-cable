@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quik Cable - Ultra-Fast Internet & TV, Delivered</title>
+    <meta name="description" content="Connect with speeds up to 1 Gbps + premium channels. Get ultra-fast internet and TV service from Quik Cable.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <span>Quik Cable</span>
+                </div>
+                <nav class="nav">
+                    <a href="#availability" class="nav-link">Check Availability</a>
+                    <a href="#services" class="nav-link">Services</a>
+                    <a href="#deals" class="nav-link">Deals</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                    <a href="#contact" class="btn btn-primary">Get Started</a>
+                </nav>
+                <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle mobile menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-background">
+            <div class="hero-video-container">
+                <div class="hero-slide active" style="background-image: url('https://images.pexels.com/photos/442150/pexels-photo-442150.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080');">
+                    <div class="hero-overlay"></div>
+                </div>
+                <div class="hero-slide" style="background-image: url('https://images.pexels.com/photos/325229/pexels-photo-325229.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080');">
+                    <div class="hero-overlay"></div>
+                </div>
+                <div class="hero-slide" style="background-image: url('https://images.pexels.com/photos/1148820/pexels-photo-1148820.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080');">
+                    <div class="hero-overlay"></div>
+                </div>
+            </div>
+            
+            <!-- Hero Controls -->
+            <button class="hero-control prev" id="hero-prev" aria-label="Previous slide">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+            <button class="hero-control next" id="hero-next" aria-label="Next slide">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+        </div>
+
+        <div class="hero-content">
+            <div class="container">
+                <div class="hero-grid">
+                    <div class="hero-text">
+                        <h1 class="hero-title">Ultra-Fast Internet & TV, Delivered.</h1>
+                        <p class="hero-subtitle">Connect with speeds up to 1 Gbps + premium channels.</p>
+                        <div class="hero-ctas">
+                            <a href="#availability" class="btn btn-outline">Check Availability</a>
+                            <a href="#contact" class="btn btn-primary">Get Started</a>
+                        </div>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat-card">
+                            <div class="stat-number">1 Gbps</div>
+                            <div class="stat-label">Max Speed</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">99.9%</div>
+                            <div class="stat-label">Uptime</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">24/7</div>
+                            <div class="stat-label">Support</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-indicators">
+            <button class="indicator active" data-slide="0"></button>
+            <button class="indicator" data-slide="1"></button>
+            <button class="indicator" data-slide="2"></button>
+        </div>
+    </section>
+
+    <!-- Availability Checker -->
+    <section class="availability-checker" id="availability">
+        <div class="container">
+            <div class="availability-content">
+                <h2>Check Service Availability</h2>
+                <p>Enter your zip code to see available plans and pricing in your area.</p>
+                <form class="availability-form" id="availability-form">
+                    <div class="form-group">
+                        <input type="text" id="zip-code" placeholder="Enter your zip code" required aria-label="Zip code">
+                        <button type="submit" class="btn btn-primary">Show My Plans</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Network Coverage Map -->
+    <section class="coverage-map" id="coverage">
+        <div class="container">
+            <h2>Network Coverage</h2>
+            <p>See where Quik Cable services are available across the country.</p>
+            <div class="map-container">
+                <div class="map-placeholder">
+                    <svg width="100%" height="400" viewBox="0 0 800 400" class="coverage-svg">
+                        <rect width="800" height="400" fill="#ECECEC" rx="8"/>
+                        <circle cx="200" cy="150" r="40" fill="#8BC53F" opacity="0.7" class="coverage-area" data-city="New York">
+                            <animate attributeName="r" values="40;45;40" dur="2s" repeatCount="indefinite"/>
+                        </circle>
+                        <circle cx="150" cy="200" r="35" fill="#8BC53F" opacity="0.7" class="coverage-area" data-city="Philadelphia">
+                            <animate attributeName="r" values="35;40;35" dur="2.5s" repeatCount="indefinite"/>
+                        </circle>
+                        <circle cx="400" cy="180" r="45" fill="#8BC53F" opacity="0.7" class="coverage-area" data-city="Chicago">
+                            <animate attributeName="r" values="45;50;45" dur="3s" repeatCount="indefinite"/>
+                        </circle>
+                        <circle cx="300" cy="250" r="30" fill="#8BC53F" opacity="0.7" class="coverage-area" data-city="Atlanta">
+                            <animate attributeName="r" values="30;35;30" dur="2.2s" repeatCount="indefinite"/>
+                        </circle>
+                        <circle cx="500" cy="280" r="38" fill="#8BC53F" opacity="0.7" class="coverage-area" data-city="Dallas">
+                            <animate attributeName="r" values="38;43;38" dur="2.8s" repeatCount="indefinite"/>
+                        </circle>
+                        <circle cx="650" cy="200" r="42" fill="#8BC53F" opacity="0.7" class="coverage-area" data-city="Los Angeles">
+                            <animate attributeName="r" values="42;47;42" dur="2.6s" repeatCount="indefinite"/>
+                        </circle>
+                        <text x="400" y="50" text-anchor="middle" fill="#1A1A1A" font-size="24" font-weight="bold">Service Coverage Areas</text>
+                    </svg>
+                </div>
+                <div class="coverage-tooltip" id="coverage-tooltip"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Plan Comparison -->
+    <section class="plan-comparison" id="plans">
+        <div class="container">
+            <h2>Compare Our Plans</h2>
+            <div class="plan-toggle">
+                <button class="toggle-btn active" data-plan="residential">Residential</button>
+                <button class="toggle-btn" data-plan="business">Business</button>
+            </div>
+            <div class="comparison-table" id="comparison-table">
+                <div class="plan-card" data-plan="basic">
+                    <div class="plan-header">
+                        <h3>Basic</h3>
+                        <div class="plan-price">
+                            <span class="price">$49.99</span>
+                            <span class="period">/month</span>
+                        </div>
+                    </div>
+                    <ul class="plan-features">
+                        <li><span class="check">✓</span> 300 Mbps Internet</li>
+                        <li><span class="check">✓</span> Unlimited Data</li>
+                        <li><span class="check">✓</span> Free Modem</li>
+                        <li><span class="cross">✗</span> TV Channels</li>
+                        <li><span class="cross">✗</span> Premium Support</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-outline">Get Started</a>
+                </div>
+                <div class="plan-card featured" data-plan="premium">
+                    <div class="plan-badge">Most Popular</div>
+                    <div class="plan-header">
+                        <h3>Premium</h3>
+                        <div class="plan-price">
+                            <span class="price">$79.99</span>
+                            <span class="period">/month</span>
+                        </div>
+                    </div>
+                    <ul class="plan-features">
+                        <li><span class="check">✓</span> 500 Mbps Internet</li>
+                        <li><span class="check">✓</span> Unlimited Data</li>
+                        <li><span class="check">✓</span> Free Modem & Router</li>
+                        <li><span class="check">✓</span> 125+ TV Channels</li>
+                        <li><span class="check">✓</span> 24/7 Support</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary">Get Started</a>
+                </div>
+                <div class="plan-card" data-plan="ultimate">
+                    <div class="plan-header">
+                        <h3>Ultimate</h3>
+                        <div class="plan-price">
+                            <span class="price">$99.99</span>
+                            <span class="period">/month</span>
+                        </div>
+                    </div>
+                    <ul class="plan-features">
+                        <li><span class="check">✓</span> 1 Gbps Internet</li>
+                        <li><span class="check">✓</span> Unlimited Data</li>
+                        <li><span class="check">✓</span> Premium Equipment</li>
+                        <li><span class="check">✓</span> 200+ TV Channels</li>
+                        <li><span class="check">✓</span> Priority Support</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-outline">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us -->
+    <section class="about-us" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About Quik Cable</h2>
+                    <p>For over a decade, Quik Cable has been delivering lightning-fast internet and premium entertainment to homes and businesses across the country. Our mission is simple: provide reliable, high-speed connections that keep you connected to what matters most.</p>
+                    <p>From streaming your favorite shows to powering your business operations, we're committed to delivering exceptional service with 24/7 support and industry-leading speeds.</p>
+                    <a href="#contact" class="btn btn-outline">Learn More</a>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.pexels.com/photos/159711/books-bookstore-book-reading-159711.jpeg?auto=compress&cs=tinysrgb&w=600&h=400" alt="Modern fiber optic cables and technology">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Services -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3>Home Internet</h3>
+                    <p>Blazing-fast speeds up to 1 Gbps for all your streaming, gaming, and work needs.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18 3A3 3 0 0 0 15 6V18A3 3 0 0 0 18 21A3 3 0 0 0 21 18V6A3 3 0 0 0 18 3Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M6 12H4A2 2 0 0 0 2 14V20A2 2 0 0 0 4 22H6A2 2 0 0 0 8 20V14A2 2 0 0 0 6 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3>Business Internet</h3>
+                    <p>Reliable, enterprise-grade connectivity to power your business operations.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2" stroke="currentColor" stroke-width="2"/>
+                            <line x1="8" y1="21" x2="16" y2="21" stroke="currentColor" stroke-width="2"/>
+                            <line x1="12" y1="17" x2="12" y2="21" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3>TV & Streaming</h3>
+                    <p>Premium channels, on-demand content, and streaming services all in one place.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16 4H18A2 2 0 0 1 20 6V18A2 2 0 0 1 18 20H6A2 2 0 0 1 4 18V6A2 2 0 0 1 6 4H8" stroke="currentColor" stroke-width="2"/>
+                            <rect x="8" y="2" width="8" height="4" rx="1" ry="1" stroke="currentColor" stroke-width="2"/>
+                            <path d="M9 12L11 14L15 10" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3>Bundles</h3>
+                    <p>Save more with our internet and TV bundles, customized for your needs.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 12.55A11 11 0 0 1 14.08 2A2 2 0 0 1 16 4V10A2 2 0 0 1 14 12H9A2 2 0 0 1 7 10V9A2 2 0 0 1 5 12.55Z" stroke="currentColor" stroke-width="2"/>
+                            <path d="M12.5 18.5A4.5 4.5 0 1 0 8 14H12.5V18.5Z" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3>Wi-Fi Extenders</h3>
+                    <p>Expand your coverage with professional-grade Wi-Fi extenders and mesh systems.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22 16.92V20A2 2 0 0 1 20 22H4A2 2 0 0 1 2 20V16.92" stroke="currentColor" stroke-width="2"/>
+                            <path d="M7 12L12 7L17 12" stroke="currentColor" stroke-width="2"/>
+                            <path d="M12 7V20" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3>24/7 Support</h3>
+                    <p>Round-the-clock technical support and customer service whenever you need it.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Deals -->
+    <section class="featured-deals" id="deals">
+        <div class="container">
+            <h2>Featured Deals</h2>
+            <div class="deals-carousel" id="deals-carousel">
+                <div class="deal-card">
+                    <div class="deal-badge">Best Value</div>
+                    <h3>Ultimate Bundle</h3>
+                    <div class="deal-price">
+                        <span class="price">$89.99</span>
+                        <span class="period">/month</span>
+                    </div>
+                    <ul class="deal-features">
+                        <li>1 Gbps Internet</li>
+                        <li>200+ Premium Channels</li>
+                        <li>Free Installation</li>
+                        <li>24/7 Support</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary">Get Started</a>
+                </div>
+                <div class="deal-card">
+                    <div class="deal-badge">Most Popular</div>
+                    <h3>Internet + TV Combo</h3>
+                    <div class="deal-price">
+                        <span class="price">$69.99</span>
+                        <span class="period">/month</span>
+                    </div>
+                    <ul class="deal-features">
+                        <li>500 Mbps Internet</li>
+                        <li>125+ Channels</li>
+                        <li>Free Wi-Fi Router</li>
+                        <li>No Contract</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary">Get Started</a>
+                </div>
+                <div class="deal-card">
+                    <div class="deal-badge">Great Deal</div>
+                    <h3>High-Speed Internet</h3>
+                    <div class="deal-price">
+                        <span class="price">$49.99</span>
+                        <span class="period">/month</span>
+                    </div>
+                    <ul class="deal-features">
+                        <li>300 Mbps Internet</li>
+                        <li>Unlimited Data</li>
+                        <li>Free Modem</li>
+                        <li>Price Lock Guarantee</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Quick Cable -->
+    <section class="why-quick-cable">
+        <div class="container">
+            <h2>Why Choose Quik Cable?</h2>
+            <div class="benefits-grid">
+                <div class="benefit-panel">
+                    <div class="benefit-icon">
+                        <svg width="56" height="56" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+                            <path d="M8 12L11 15L16 9" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3>99.9% Uptime</h3>
+                    <p>Industry-leading reliability ensures you stay connected when it matters most.</p>
+                </div>
+                <div class="benefit-panel alt">
+                    <div class="benefit-icon">
+                        <svg width="56" height="56" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13 2L3 14H12L11 22L21 10H12L13 2Z" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3>Lightning Fast</h3>
+                    <p>Experience speeds up to 1 Gbps with our fiber-optic network infrastructure.</p>
+                </div>
+                <div class="benefit-panel">
+                    <div class="benefit-icon">
+                        <svg width="56" height="56" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-width="2"/>
+                            <path d="M12 6V12L16 14" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3>24/7 Support</h3>
+                    <p>Our expert technicians are available around the clock to help you.</p>
+                </div>
+                <div class="benefit-panel alt">
+                    <div class="benefit-icon">
+                        <svg width="56" height="56" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2L13.09 8.26L22 9L16 14L18 22L12 19L6 22L8 14L2 9L10.91 8.26L12 2Z" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3>Award Winning</h3>
+                    <p>Recognized for outstanding customer service and network performance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Speed Test -->
+    <section class="speed-test" id="speed-test">
+        <div class="container">
+            <h2>Test Your Current Speed</h2>
+            <div class="speed-test-widget">
+                <div class="speed-gauge">
+                    <svg width="200" height="120" viewBox="0 0 200 120">
+                        <path d="M 20 100 A 80 80 0 0 1 180 100" stroke="#ECECEC" stroke-width="8" fill="none"/>
+                        <path id="speed-arc" d="M 20 100 A 80 80 0 0 0 20 100" stroke="#8BC53F" stroke-width="8" fill="none" stroke-linecap="round"/>
+                        <circle cx="100" cy="100" r="4" fill="#8BC53F"/>
+                        <text x="100" y="90" text-anchor="middle" fill="#1A1A1A" font-size="24" font-weight="bold" id="speed-value">0</text>
+                        <text x="100" y="110" text-anchor="middle" fill="#666" font-size="12">Mbps</text>
+                    </svg>
+                </div>
+                <button class="btn btn-primary" id="start-speed-test">Start Speed Test</button>
+                <div class="speed-results" id="speed-results" style="display: none;">
+                    <div class="result-item">
+                        <span class="result-label">Download:</span>
+                        <span class="result-value" id="download-speed">0 Mbps</span>
+                    </div>
+                    <div class="result-item">
+                        <span class="result-label">Upload:</span>
+                        <span class="result-value" id="upload-speed">0 Mbps</span>
+                    </div>
+                    <div class="result-item">
+                        <span class="result-label">Ping:</span>
+                        <span class="result-value" id="ping-value">0 ms</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <h2>What Our Customers Say</h2>
+            <div class="testimonials-carousel" id="testimonials-carousel">
+                <div class="testimonial-card active">
+                    <div class="testimonial-content">
+                        <p>"Quik Cable has transformed our home internet experience. The speeds are incredible and the customer service is top-notch!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=100&h=100" alt="Sarah Johnson">
+                        <div class="author-info">
+                            <h4>Sarah Johnson</h4>
+                            <span>Homeowner, Austin TX</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"As a business owner, reliable internet is crucial. Quik Cable delivers consistent performance that keeps our operations running smoothly."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=100&h=100" alt="Mike Chen">
+                        <div class="author-info">
+                            <h4>Mike Chen</h4>
+                            <span>Business Owner, Seattle WA</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"The installation was seamless and the technician was professional. We're getting exactly the speeds we were promised!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&w=100&h=100" alt="Emily Rodriguez">
+                        <div class="author-info">
+                            <h4>Emily Rodriguez</h4>
+                            <span>Family, Denver CO</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners -->
+    <section class="partners" id="partners">
+        <div class="container">
+            <h2>Our Partners</h2>
+            <div class="partners-slider" id="partners-slider">
+                <div class="partner-logo">Paramount+</div>
+                <div class="partner-logo">SHOWTIME®</div>
+                <div class="partner-logo">AT&T</div>
+                <div class="partner-logo">Verizon</div>
+                <div class="partner-logo">Spectrum</div>
+                <div class="partner-logo">Comcast Xfinity</div>
+                <div class="partner-logo">Frontier</div>
+                <div class="partner-logo">HughesNet</div>
+                <div class="partner-logo">CenturyLink</div>
+                <div class="partner-logo">Paramount+</div>
+                <div class="partner-logo">SHOWTIME®</div>
+                <div class="partner-logo">AT&T</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-accordion">
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false" aria-controls="faq-1">
+                        <span>What services does Quik Cable offer?</span>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer" id="faq-1">
+                        <p>Quik Cable provides a wide range of connectivity solutions, including high-speed internet, cellular plans, bundled packages, and streaming services. As a certified JNA dealer, we partner with top providers to offer the best options for your home or business.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false" aria-controls="faq-2">
+                        <span>What companies are serviceable through Quik Cable and JNA?</span>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer" id="faq-2">
+                        <p>As a certified JNA dealer, Quik Cable offers services from leading companies, including: Paramount+, SHOWTIME®, AT&T, Verizon, Spectrum, Comcast Xfinity, Frontier, HughesNet, CenturyLink, and many more. Through our partnerships, we ensure access to reliable and diverse service options.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false" aria-controls="faq-3">
+                        <span>Is Quik Cable a service provider?</span>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer" id="faq-3">
+                        <p>Quik Cable is an authorized dealer and certified retailer, but not a direct service provider. We work with top providers, like those listed above, to connect you with their offerings, ensuring you receive the best possible service.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false" aria-controls="faq-4">
+                        <span>What are Quik Cable's execution charges?</span>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer" id="faq-4">
+                        <p>Quik Cable charges for execution services, including setting up new connections, processing bill payments, plan upgrades, account cancellations, and other administrative tasks. These charges range from $49.99 to $199.99, depending on the service request, and are separate from the billing charges of the service providers.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false" aria-controls="faq-5">
+                        <span>Why are Quik Cable's execution charges separate from my service provider's billing?</span>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer" id="faq-5">
+                        <p>As a separate entity, Quik Cable independently handles the execution of your service requests. Our charges cover the work required to manage and complete requests such as plan upgrades, installations, or account changes. These fees are distinct from your provider's billing, which covers your actual internet, cellular, or streaming service.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false" aria-controls="faq-6">
+                        <span>How do I contact Quik Cable for support?</span>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer" id="faq-6">
+                        <p>You can reach our customer support team through the contact form on our website or via the live chat widget. Our team is available to help with inquiries, service requests, or troubleshooting needs.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog & Updates -->
+    <section class="blog-updates" id="blog">
+        <div class="container">
+            <h2>Latest News & Updates</h2>
+            <div class="blog-grid">
+                <article class="blog-card">
+                    <img src="https://images.pexels.com/photos/442150/pexels-photo-442150.jpeg?auto=compress&cs=tinysrgb&w=400&h=250" alt="5G Technology">
+                    <div class="blog-content">
+                        <h3>The Future of 5G Technology</h3>
+                        <p>Discover how 5G is revolutionizing internet connectivity and what it means for your home and business.</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </article>
+                <article class="blog-card">
+                    <img src="https://images.pexels.com/photos/325229/pexels-photo-325229.jpeg?auto=compress&cs=tinysrgb&w=400&h=250" alt="Fiber Optic">
+                    <div class="blog-content">
+                        <h3>Fiber Optic vs Cable Internet</h3>
+                        <p>Learn about the differences between fiber optic and cable internet to make the best choice for your needs.</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </article>
+                <article class="blog-card">
+                    <img src="https://images.pexels.com/photos/1148820/pexels-photo-1148820.jpeg?auto=compress&cs=tinysrgb&w=400&h=250" alt="Smart Home">
+                    <div class="blog-content">
+                        <h3>Building a Smart Home Network</h3>
+                        <p>Tips and tricks for setting up a robust home network that can handle all your smart devices.</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Us -->
+    <section class="contact-us" id="contact">
+        <div class="container">
+            <h2>Get Started Today</h2>
+            <div class="contact-content">
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="text" id="first-name" name="first-name" placeholder="First Name" required aria-label="First Name">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="last-name" name="last-name" placeholder="Last Name" required aria-label="Last Name">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Email Address" required aria-label="Email Address">
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" placeholder="Phone Number" aria-label="Phone Number">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="zip" name="zip" placeholder="Zip Code" required aria-label="Zip Code">
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="How can we help you?" rows="4" aria-label="Message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <h3>Or reach out anytime</h3>
+                    <div class="contact-item">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+                            <path d="M12 6V12L16 14" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                        <div>
+                            <h4>Hours</h4>
+                            <p>24/7 Support Available</p>
+                        </div>
+                    </div>
+                    <div class="live-chat-launcher">
+                        <button class="btn btn-primary" id="live-chat-btn">Start Live Chat</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#availability">Check Availability</a></li>
+                        <li><a href="#services">Our Services</a></li>
+                        <li><a href="#deals">Current Deals</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#contact">Technical Support</a></li>
+                        <li><a href="#contact">Billing Support</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#contact">Report Outage</a></li>
+                        <li><a href="#contact">Equipment Help</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="refund-policy.html">Refund Policy</a></li>
+                        <li><a href="terms-conditions.html">Terms & Conditions</a></li>
+                        <li><a href="#contact">Accessibility</a></li>
+                        <li><a href="#contact">Complaints</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Social</h4>
+                    <ul>
+                        <li><a href="#" aria-label="Facebook">Facebook</a></li>
+                        <li><a href="#" aria-label="Twitter">Twitter</a></li>
+                        <li><a href="#" aria-label="Instagram">Instagram</a></li>
+                        <li><a href="#" aria-label="LinkedIn">LinkedIn</a></li>
+                        <li><a href="#" aria-label="YouTube">YouTube</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Quik Cable. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
